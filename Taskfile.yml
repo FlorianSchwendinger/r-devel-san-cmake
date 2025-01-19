@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  build:
+    desc: Build the Docker image
+    cmds:
+      - podman build --tag r-devel-san-cmake -f ./Dockerfile
+
+  run:
+    desc: Run the Docker image
+    cmds:
+      - podman run --rm -it localhost/r-devel-san-cmake:latest bash
