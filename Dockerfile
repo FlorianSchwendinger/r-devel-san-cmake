@@ -2,7 +2,7 @@
 
 ## start with the Docker 'base R' Debian-based image
 # https://hub.docker.com/r/rocker/r-devel-san
-FROM r-devel-san:latest
+FROM rocker/r-devel-san:latest
 
 LABEL maintainer="Florian Schwendinger"
 
