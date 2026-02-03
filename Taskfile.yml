@@ -1,6 +1,12 @@
 version: '3'
 
 tasks:
+  pull:
+    desc: Pull the base r-devel-san image
+    cmds:
+      - podman pull docker.io/rocker/r-devel-san:latest
+      - podman tag docker.io/rocker/r-devel-san:latest r-devel-san:latest
+
   build:
     desc: Build the Docker image
     cmds:
